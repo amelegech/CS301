@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>My address </title> 
+ <script> 
+ function myAddress(){
+     let name = document.getElementById("nameInputBox").value;
+     let street = document.getElementById("streetInputBox").value;
+     let city = document.getElementById("cityInputBox").value;
+     let state = document.getElementById("stateInputBox").value;
+     let zip = document.getElementById("zipInputBox").value;
+     let Address = name + street + city + state + zip;
+     document.getElementById("outPutDiv").innerHTML=Address;
+    
+ }
+ </script>
+</head>
+<body> 
+    <br>Name:<input type ="text" Id = "nameInputBox"></br>
+    <br>Street:<input type ="text" Id = "streetInputBox"><br> 
+    <br>City:<input type ="text" Id ="cityInputBox"><br></br>
+
+    State:<input type ="text" Id ="stateInputBox"> 
+    Zip code:<input type ="text" Id ="zipInputBox"> 
+    <button type = "button" onclick = "myAddress()">make address </button>
+    <div id ="outPutDiv"></div>
+    <div id ="outPutDiv"></div>
+    <div id ="outPutDiv"></div>
+</body>
+</html>
